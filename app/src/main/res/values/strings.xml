@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Movie Catalogue Final</string>
+    <string name="movie">Movie</string>
+    <string name="tv">Tv Show</string>
+    <string name="language">Language</string>
+    <string name="favorite">Favorite</string>
+    <string name="overview">Overview</string>
+    <string name="info" translatable="false">Info</string>
+    <string name="status" translatable="false">Status</string>
+    <string name="score">Score</string>
+    <string name="released_date">Released Date</string>
+    <string name="duration">Duration</string>
+    <string name="delete">Delete</string>
+    <string name="dialog_msg">Do you want to delete from favorites</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="remove_msg">Success remove favorite</string>
+    <string name="add_fav">Success add favorite</string>
+    <string name="reminder">Reminder</string>
+    <string name="search">Search…</string>
+    <string name="rem_daily">Morning you!</string>
+    <string name="rem_release">has been release today!</string>
+    <string name="_404" translatable="false">404</string>
+    <string name="all">All</string>
+
+</resources>

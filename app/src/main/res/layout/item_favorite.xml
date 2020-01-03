@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="fav"
+            type="com.studio.yami.moviecataloguefinal.model.Favorite" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_pos_fav"
+                android:layout_width="0dp"
+                android:layout_height="210dp"
+                android:scaleType="fitXY"
+                app:poster="@{fav.getPoster}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_score_fav"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/merriweather_bold"
+                android:gravity="center"
+                android:text="@{fav.getScore}"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_pos_fav"
+                app:srcDrawable="@{fav.getBackground}" />
+
+            <TextView
+                android:id="@+id/tv_title_fav"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="@font/merriweather_bold"
+                android:maxLines="1"
+                android:text="@{fav.getName}"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_score_fav"
+                app:layout_constraintTop_toTopOf="@+id/tv_score_fav" />
+
+            <TextView
+                android:id="@+id/tv_date_fav"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{fav.getDate}"
+                android:fontFamily="@font/merriweather_light"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_title_fav"
+                app:layout_constraintStart_toStartOf="@+id/tv_title_fav"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_fav" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/colorYellow"
+                android:text="@string/delete"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_score_fav" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

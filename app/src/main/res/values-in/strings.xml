@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Katalog Movie Final</string>
+    <string name="movie">Film</string>
+    <string name="tv">Acara TV</string>
+    <string name="language">Bahasa</string>
+    <string name="favorite">Favorit</string>
+    <string name="overview">Ikhtisar</string>
+    <string name="score">Skor</string>
+    <string name="released_date">Tanggal Rilis</string>
+    <string name="duration">Durasi</string>
+    <string name="delete">Hapus</string>
+    <string name="dialog_msg">Apa anda ingin menghapus dari favorit</string>
+    <string name="yes">ya</string>
+    <string name="no">tidak</string>
+    <string name="remove_msg">Berasil hapus favorit</string>
+    <string name="add_fav">Berhasil tambah favorit</string>
+    <string name="reminder">Peringatan</string>
+    <string name="search">Pencarian…</string>
+    <string name="rem_daily">Padi kamu!</string>
+    <string name="rem_release">telah dirilis hari ini!</string>
+    <string name="all">Semua</string>
+</resources>
